@@ -581,36 +581,33 @@ nav {
     background-color: #1a73e8;
     transform: scale(1.1);
   }
-  
-  /* Base styles unchanged... */
 
-/* Responsive adjustments for smaller screens */
+
 @media (max-width: 768px) {
-  /* Navbar links thoda chhote karen aur spacing kam */
   nav {
-    padding: 2vh 3vw;
+    padding: 2vh 4vw;
   }
   .logo {
-    font-size: 6vmin; /* thoda bada logo */
+    font-size: 5vmin; 
   }
   .nav-links {
     gap: 2vmin;
   }
   .nav-links li a {
-    font-size: 3.5vmin; /* thoda bada text */
+    font-size: 3vmin;
   }
 
-  /* Home section ko vertical stack karen */
+
   #home {
     flex-direction: column;
-    padding: 6vh 4vw;
+    padding: 6vh 3vw;
     gap: 4vmin;
   }
   #home .image, #home .text {
-    min-width: 80vmin; /* zyada width lein mobile par */
+    min-width: 80vmin;
   }
   #home .text {
-    font-size: 4.5vmin; /* text thoda bada karen */
+    font-size: 4.5vmin;
     line-height: 6vmin;
   }
   #home .text h2 {
@@ -622,7 +619,6 @@ nav {
     bottom: -1.3vmin;
   }
 
-  /* About section vertical stack */
   #about {
     flex-direction: column;
     padding: 6vh 4vw;
@@ -651,7 +647,7 @@ nav {
     margin-bottom: 4vmin;
   }
   .service-card {
-    flex: 1 1 80vmin; /* cards full width mobile par */
+    flex: 1 1 80vmin;
     max-width: 90vw;
     padding: 5vmin 4vmin;
     font-size: 3.8vmin;
@@ -667,7 +663,6 @@ nav {
     line-height: 5vmin;
   }
 
-  /* Contact form */
   #contact {
     padding: 6vh 4vw;
   }
@@ -703,7 +698,6 @@ nav {
     line-height: 5vmin;
   }
 
-  /* Footer */
   #footer {
     font-size: 3.5vmin;
     padding: 5vh 4vw 3vh;
@@ -726,7 +720,6 @@ nav {
     font-size: 3vmin;
   }
 
-  /* Scroll to top button */
   #scrollTopBtn {
     bottom: 4vmin;
     right: 4vmin;
