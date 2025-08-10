@@ -581,4 +581,156 @@ nav {
     background-color: #1a73e8;
     transform: scale(1.1);
   }
-    
+  
+  /* Base styles unchanged... */
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Navbar links thoda chhote karen aur spacing kam */
+  nav {
+    padding: 2vh 3vw;
+  }
+  .logo {
+    font-size: 6vmin; /* thoda bada logo */
+  }
+  .nav-links {
+    gap: 2vmin;
+  }
+  .nav-links li a {
+    font-size: 3.5vmin; /* thoda bada text */
+  }
+
+  /* Home section ko vertical stack karen */
+  #home {
+    flex-direction: column;
+    padding: 6vh 4vw;
+    gap: 4vmin;
+  }
+  #home .image, #home .text {
+    min-width: 80vmin; /* zyada width lein mobile par */
+  }
+  #home .text {
+    font-size: 4.5vmin; /* text thoda bada karen */
+    line-height: 6vmin;
+  }
+  #home .text h2 {
+    font-size: 6vmin;
+  }
+  #home .text h2::after {
+    width: 14vmin;
+    height: 0.7vmin;
+    bottom: -1.3vmin;
+  }
+
+  /* About section vertical stack */
+  #about {
+    flex-direction: column;
+    padding: 6vh 4vw;
+    gap: 4vmin;
+  }
+  #about .about-image,
+  #about .about-text {
+    min-width: 80vmin;
+  }
+  #about .about-text {
+    font-size: 4.3vmin;
+    line-height: 6vmin;
+  }
+  #about .about-text h2 {
+    font-size: 6vmin;
+  }
+  #about .about-text h2::after {
+    width: 14vmin;
+    height: 0.7vmin;
+    bottom: -1.3vmin;
+  }
+
+  /* Services section text */
+  #services h2 {
+    font-size: 6vmin;
+    margin-bottom: 4vmin;
+  }
+  .service-card {
+    flex: 1 1 80vmin; /* cards full width mobile par */
+    max-width: 90vw;
+    padding: 5vmin 4vmin;
+    font-size: 3.8vmin;
+  }
+  .service-card i {
+    font-size: 8vmin;
+  }
+  .service-card h3 {
+    font-size: 5vmin;
+  }
+  .service-card p {
+    font-size: 3.5vmin;
+    line-height: 5vmin;
+  }
+
+  /* Contact form */
+  #contact {
+    padding: 6vh 4vw;
+  }
+  #contact h2 {
+    font-size: 6vmin;
+    margin-bottom: 4vmin;
+  }
+  .contact-form {
+    font-size: 4vmin;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 4vmin;
+    padding: 3vmin 4vmin;
+  }
+  .contact-form button {
+    font-size: 5vmin;
+    padding: 3vmin 0;
+  }
+
+  /* Banking details cards */
+  .bank-card {
+    flex: 1 1 80vmin;
+    max-width: 90vw;
+    padding: 5vmin 5vmin;
+    font-size: 4vmin;
+  }
+  .bank-card h3 {
+    font-size: 5vmin;
+  }
+  .bank-card p {
+    font-size: 3.8vmin;
+    line-height: 5vmin;
+  }
+
+  /* Footer */
+  #footer {
+    font-size: 3.5vmin;
+    padding: 5vh 4vw 3vh;
+  }
+  .footer-about h3,
+  .footer-links h4,
+  .footer-contact h4 {
+    font-size: 5vmin;
+  }
+  .footer-about p,
+  .footer-contact p,
+  .footer-links ul li a {
+    font-size: 4vmin;
+  }
+  .social-icons a {
+    font-size: 6vmin;
+    margin-right: 3vmin;
+  }
+  .footer-bottom {
+    font-size: 3vmin;
+  }
+
+  /* Scroll to top button */
+  #scrollTopBtn {
+    bottom: 4vmin;
+    right: 4vmin;
+    padding: 2vmin 3vmin;
+    font-size: 5vmin;
+  }
+}
